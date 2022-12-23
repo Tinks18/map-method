@@ -7,6 +7,7 @@
 // Using a for loop
 let nums = [1,2,3,4,5];
 let results = [];
+
 for (let num of nums){
   results.push(num*2)
 }
@@ -14,6 +15,7 @@ console.log(results);
 
 
 // Using map()
+
 const multByTwo =function (num){
   return num * 2;
 }
@@ -51,15 +53,25 @@ const students = [
   },
 ];
 
-// const arrow = nums.map(num => num * 2);
-// console.log(arrow);
+
+
+
+
+
+
 const studentsWithIds2 = students.map(student => (
   {
     id: student.id,
     name: student.name
+
   } 
 ));
- const studentsWithIds = students.map(student => [student.id , student.name] ) ;
+
+
+console.log(students[0]);
+
+ const studentsWithIds = students.map(student => [
+  student.id , student.name] ) ;
 
  console.log(studentsWithIds);
 console.log(studentsWithIds2);
